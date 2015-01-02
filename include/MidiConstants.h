@@ -32,7 +32,9 @@
 #ifdef CINDER_LINUX
 	#define __LINUX_ALSASEQ__
 #elif defined(CINDER_MSW)
+#ifndef __WINDOWS_MM__
 	#define __WINDOWS_MM__
+#endif
 #elif defined(CINDER_MAC)
 	#define __MACOSX_CORE__
 #endif
