@@ -56,6 +56,7 @@ public:
 	void closePort();
 	void processMessage(double deltatime, std::vector<unsigned char> *message);
 	unsigned int getPort()const;
+	std::string getPortName(unsigned int port);
 	
 	bool hasWaitingMessages();
 	bool getNextMessage(Message*);

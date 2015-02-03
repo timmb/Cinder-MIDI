@@ -31,6 +31,10 @@ namespace cinder { namespace midi {
 			mPortNames.push_back(mMidiIn.getPortName(i));
 		}
 	}
+
+	std::string Input::getPortName(unsigned int port) {
+		return mMidiIn.getPortName(port);
+	}
 	
 	void Input::openPort(unsigned int port){
 		if (mNumPorts == 0){
