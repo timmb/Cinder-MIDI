@@ -31,7 +31,7 @@
  *	Connects to ALL present MIDI devices
  */
 
-#include "cinder/app/AppBasic.h"
+#include "cinder/app/App.h"
 #include "MidiHub.h"
 
 namespace cinder { namespace midi {
